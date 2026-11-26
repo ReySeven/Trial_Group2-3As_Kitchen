@@ -46,3 +46,5 @@ const OtpForm = ({ email, code, setCode, error, note, loading, onSubmit, onResen
 };
 
 export default OtpForm;
+
+// This component renders a form for users to input a 6-digit OTP (One-Time Password) sent to their email for verification. It includes fields for the OTP, error handling, and buttons for submitting the form, resending the code, and changing the email address. The component uses props to manage state and handle events.

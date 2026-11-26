@@ -27,7 +27,7 @@ export default function OtpPage() {
 
   useEffect(() => {
     if (!reg) navigate('/register', { replace: true });
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+ 
   }, []);
 
   async function post(url, body) {

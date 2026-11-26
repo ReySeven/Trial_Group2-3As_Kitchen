@@ -37,7 +37,7 @@ export default function RegisterPage() {
     setErrors({});
 
     try {
-      // Step 1 — send OTP via Vite plugin
+    
       const otpRes  = await fetch('/api/send-otp', {
         method:  'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -51,7 +51,7 @@ export default function RegisterPage() {
         return;
       }
 
-      // Store registration data for OTP page
+     
       sessionStorage.setItem('3a_reg', JSON.stringify({
         first_name: firstName.trim(),
         last_name:  lastName.trim(),

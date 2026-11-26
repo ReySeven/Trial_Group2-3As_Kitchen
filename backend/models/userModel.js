@@ -2,7 +2,6 @@ import pool from '../config/db.js';
 
 const fullName = `CONCAT(first_name, ' ', last_name)`;
 
-// read
 export const fetch = async () => {
     const [rows] = await pool.query(
         `SELECT id, first_name, last_name, ${fullName} AS name, email, role, created_at FROM users`

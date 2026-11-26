@@ -30,7 +30,6 @@ export const login = async (req, res) => {
     try {
         const result = await userService.login(user);
 
-        // save to session
         req.session.user = {
             id:      result.id,
             name:    result.name,
